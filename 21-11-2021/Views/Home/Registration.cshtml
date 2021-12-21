@@ -1,0 +1,36 @@
+﻿@page
+@model _21_11_2021.Views.Home.Registration
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Registration</title>
+</head>
+ <body>
+      <form asp-action="Registration" method="post">
+          <div>
+              <label asp-for="Name">Your name:</label>
+              <input asp-for="Name" />
+          </div>
+          <div>
+              <label asp-for="Email">Your email:</label>
+              <input asp-for="Email" />
+          </div>
+          <div>
+              <label asp-for="University">Your university:</label>
+              <input asp-for="University" />
+          </div>
+          <div>
+              <label asp-for="Course">Your course:</label>
+              <input asp-for="Course" />
+          </div>
+          <button type="submit">Registrate</button>
+      </form>
+  </body>
+
+</html>
